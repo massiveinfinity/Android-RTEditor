@@ -42,7 +42,7 @@ android {
 }
 
 dependencies {
-    compile project(':ColorPicker');
+    compile 'com.1gravity:android-rteditor-colorpicker:1.2.1';
 }
 
 apply from: '../android-artifacts.gradle'
