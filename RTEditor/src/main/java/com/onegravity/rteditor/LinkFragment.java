@@ -36,8 +36,6 @@ import com.onegravity.rteditor.utils.validator.EmailValidator;
 import com.onegravity.rteditor.utils.validator.UrlValidator;
 import com.onegravity.rteditor.utils.validator.Validator;
 
-import org.greenrobot.eventbus.EventBus;
-
 import java.lang.ref.SoftReference;
 import java.util.HashMap;
 import java.util.Locale;
@@ -45,7 +43,7 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-
+import de.greenrobot.event.EventBus;
 
 /**
  * A DialogFragment to add, modify or remove links from Spanned text.
