@@ -62,13 +62,13 @@ import com.onegravity.rteditor.utils.Constants.MediaAction;
 import com.onegravity.rteditor.utils.Helper;
 import com.onegravity.rteditor.utils.Selection;
 
+import org.greenrobot.eventbus.EventBus;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-
-import de.greenrobot.event.EventBus;
 
 /**
  * The RTManager manages the different components:

@@ -47,12 +47,12 @@ import com.onegravity.rteditor.toolbar.spinner.SpinnerItemAdapter;
 import com.onegravity.rteditor.toolbar.spinner.SpinnerItems;
 import com.onegravity.rteditor.utils.Helper;
 
+import org.greenrobot.eventbus.EventBus;
+
 import java.util.List;
 import java.util.SortedSet;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
-
-import de.greenrobot.event.EventBus;
 
 /**
  * This class is a concrete implementation of the RTToolbar interface. It uses
