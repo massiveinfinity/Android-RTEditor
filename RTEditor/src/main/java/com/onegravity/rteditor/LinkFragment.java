@@ -24,7 +24,6 @@ import android.app.Fragment;
 import android.content.DialogInterface;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
@@ -237,7 +236,7 @@ public class LinkFragment extends DialogFragment {
                 .positiveText(android.R.string.ok)
                 .onPositive(new MaterialDialog.SingleButtonCallback() {
                     @Override
-                    public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
+                    public void onClick( MaterialDialog dialog,  DialogAction which) {
                         // OK button
                         validate(dialog, addressView, textView);
                     }
@@ -245,7 +244,7 @@ public class LinkFragment extends DialogFragment {
                 .negativeText(android.R.string.cancel)
                 .onNegative(new MaterialDialog.SingleButtonCallback() {
                     @Override
-                    public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
+                    public void onClick( MaterialDialog dialog,  DialogAction which) {
                         // Cancel button
                         EventBus.getDefault().post(new LinkEvent(LinkFragment.this, new Link(null, url), true));
                     }
@@ -255,7 +254,7 @@ public class LinkFragment extends DialogFragment {
             builder.neutralText(R.string.rte_remove_action)
             .onNeutral(new MaterialDialog.SingleButtonCallback() {
                 @Override
-                public void onClick(@NonNull MaterialDialog materialDialog, @NonNull DialogAction dialogAction) {
+                public void onClick( MaterialDialog materialDialog,  DialogAction dialogAction) {
                     // Remove button
                     EventBus.getDefault().post(new LinkEvent(LinkFragment.this, null, false));
                 }

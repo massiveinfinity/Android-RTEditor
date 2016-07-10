@@ -42,7 +42,18 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile files('../libs/m2repository/com/android/support/support-vector-drawable/23.3.0/support-vector-drawable-23.3.0-sources.jar')
+    compile(name:'../libs/m2repository/com/android/support/support-vector-drawable/23.3.0/support-vector-drawable-23.3.0', ext:'aar')
+
+    compile files('../libs/m2repository/com/android/support/animated-vector-drawable/23.3.0/animated-vector-drawable-23.3.0-sources.jar')
+    compile(name:'../libs/m2repository/com/android/support/animated-vector-drawable/23.3.0/animated-vector-drawable-23.3.0', ext:'aar')
+
+    compile files('../libs/m2repository/com/android/support/support-v4/23.3.0/support-v4-23.3.0-sources.jar')
+    compile(name:'../libs/m2repository/com/android/support/support-v4/23.3.0/support-v4-23.3.0', ext:'aar')
+
+    compile files('../libs/m2repository/com/android/support/appcompat-v7/23.3.0/appcompat-v7-23.3.0-sources.jar')
+    compile(name:'../libs/m2repository/com/android/support/appcompat-v7/23.3.0/appcompat-v7-23.3.0', ext:'aar')
+
     compile files('../libs/eventbus-2.4.0.jar')
     compile(name:'../libs/android-rteditor-colorpicker-1.3.0', ext:'aar')
     compile(name:'../libs/core-0.8.5.0', ext:'aar')
